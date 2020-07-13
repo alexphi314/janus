@@ -1,0 +1,4 @@
+.tox
+.idea
+.pytest_cache
+janus.egg-info
