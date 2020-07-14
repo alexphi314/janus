@@ -27,7 +27,7 @@ jobs:
           --out-dir dist/
           .
       - name: Upload wheel to github
-        uses: kittaakos/upload-artifact-as-is@v1
+        uses: kittaakos/upload-artifact-as-is@v0.0.1
         with:
           path: dist
       - name: Publish distribution to Test PyPI
