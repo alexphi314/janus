@@ -6,6 +6,8 @@ with open("README.md", "r") as fh:
 setup(name='janus-highvar',
       version='0.0.1',
       description='Dungeons and Dragons High Variance Die Roller',
+      long_description=long_description,
+      long_description_content_type="text/markdown",
       author='Alex Philpott',
       url='https://github.com/alexphi314/janus',
       packages=find_packages(),
@@ -15,4 +17,5 @@ setup(name='janus-highvar',
             ]
       },
       extras_require={":python_version<'3.3'": ["mock"]},
+      python_requires='>=2.7',
       )
