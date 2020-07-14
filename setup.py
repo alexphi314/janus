@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(name='janus',
+setup(name='janus-highvar',
       version='0.0.1',
       description='Dungeons and Dragons High Variance Die Roller',
       author='Alex Philpott',
