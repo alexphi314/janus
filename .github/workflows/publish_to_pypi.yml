@@ -36,3 +36,13 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           password: ${{ secrets.PYPI_PASSWORD }}
+      - name: Upload wheel to github
+        uses: actions/upload-artifact@v1
+        with:
+          name: janus.whl
+          path: dist/*.whl
+      - name: Upload dist to github
+        uses: actions/upload-artifact@v1
+        with:
+          name: janus.tar.gz
+          path: dist/*.gz
