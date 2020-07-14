@@ -27,15 +27,9 @@ jobs:
           --out-dir dist/
           .
       - name: Upload wheel to github
-        uses: actions/upload-artifact@v1
+        uses: kittaakos/upload-artifact-as-is@v1
         with:
-          name: janus.whl
-          path: dist/*.whl
-      - name: Upload dist to github
-        uses: actions/upload-artifact@v1
-        with:
-          name: janus.tar.gz
-          path: dist/*.gz
+          path: dist
       - name: Publish distribution to Test PyPI
         uses: pypa/gh-action-pypi-publish@master
         with:
